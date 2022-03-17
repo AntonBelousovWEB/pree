@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Highlighting JS plugin code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  
+<div id='preloader'>
+  <img src="preloader.gif" alt="preloader" width="100%" height="100%" >
+</div>
+  <script>
+    window.onload = function() {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide-preloader');
+    setInterval(function() {
+          preloader.classList.add('preloader-hidden');
+    }, 990);
+}
+  </script>
+
+
+<div class="progress-bar" id="progressBar"></div>
+<br> <br>
+<div id="typed-strings" class="string">
+  <span class="spanbruh">Highlighting JS plugin code</span>  
+</div> 
+<div class="text-typing">
+  <span id="typed"></span>  
+</div> <br> <br> 
+
+<input class="inputcode" type="text" id="MyInputhtml" value="&lt;div class=&quot;thegrid&quot;&gt;
+&lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;4&quot;&gt;&lt;div data-text=&quot;0&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;1&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;2&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;3&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;4&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;5&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;3&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;6&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;3&quot;&gt;&lt;div data-text=&quot;7&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;8&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;2&quot;&gt;&lt;div data-text=&quot;9&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;">
+
+<input class="inputcode" type="text" id="MyInputcss" value="pre[rel]{
+  padding-top: 50px !important;
+}
+pre[rel]:before{
+  content: attr(rel);
+  background-color: #e18728;
+  color: #fff;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-indent: 15px;
+}">
+
+<input class="inputcode" type="text" id="MyInputphp" value="function get_hand_text($text){
+  if($text){
+  preg_match_all(, $text, $match);
+  if($match[1]){
+  foreach($match[1] as $val){
+  $text = str_replace($val, htmlspecialchars(trim($val), ENT_QUOTES), $text);
+  }
+  }
+  return $text;
+  }
+  return false;
+  }">
+
+  <input class="inputcode" type="text" id="MyInputsql" value="CREATE TABLE IF NOT EXISTS `ratings` (
+    `id` varchar(11) NOT NULL,
+    `total_votes` int(11) NOT NULL DEFAULT '0',
+    `total_value` int(11) NOT NULL DEFAULT '0',
+    `used_ips` longtext,
+    PRIMARY KEY (`id`)
+  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;">
+
+
+<pre class="prehtml"><code class="language-html">
+<h1 class="texthhtml">MY HTML CODE</h1><i class="svgglobal"onclick="myFunctionhtml()"><span class="displayText" id="mytooltipehtml">Code Copied!</span></i><div class="codetexthtml">
+  &lt;div class=&quot;thegrid&quot;&gt;
+  &lt;div class=&quot;loading&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;4&quot;&gt;&lt;div data-text=&quot;0&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;1&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;2&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;3&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;4&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;5&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;3&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;6&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;3&quot;&gt;&lt;div data-text=&quot;7&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;2&quot; data-height=&quot;1&quot;&gt;&lt;div data-text=&quot;8&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&quot;cell&quot; data-width=&quot;1&quot; data-height=&quot;2&quot;&gt;&lt;div data-text=&quot;9&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</div></code></pre> <br> <br>
+
+<script>
+  function myFunctionhtml() {
+    var copyText = document.getElementById("MyInputhtml");
+    copyText.select();
+    document.execCommand("copy");
+    var tooltip = document.getElementById("mytooltipehtml");
+    tooltip.innerHTML = "Code Copied!";
+  }
+  </script>
+  
+<pre><code class="language-css codecsspre">
+<h1 class="texthcss">MY CSS CODE</h1><i class="svgglobal"onclick="myFunctioncss()"><span class="displayText" id="mytooltipecss">Code Copied!</span></i><div class="codetextcss">pre[rel]{
+  padding-top: 50px !important;
+}
+pre[rel]:before{
+  content: attr(rel);
+  background-color: #e18728;
+  color: #fff;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-indent: 15px;
+}</div></code></pre> <br> <br> <br> <br>
+
+<script>
+  function myFunctioncss() {
+    var copyText = document.getElementById("MyInputcss");
+    copyText.select();
+    document.execCommand("copy");
+    var tooltip = document.getElementById("mytooltipecss");
+    tooltip.innerHTML = "Code Copied!";
+  }
+  </script>
+  
+<pre class="prehtml"><code class="language-php codephppre">
+<h1 class="texthhtml">MY PHP CODE</h1><i class="svgglobal"onclick="myFunctionphp()"><span class="displayText" id="mytooltipephp">Code Copied!</span></i><div class="codetexthtml">
+function get_hand_text($text){
+if($text){
+preg_match_all("", $text, $match);
+if($match[1]){
+foreach($match[1] as $val){
+$text = str_replace($val, htmlspecialchars(trim($val), ENT_QUOTES), $text);
+}
+}
+return $text;
+}
+return false;
+}</div></code></pre> <br> <br> <br> <br>
+
+<script>
+  function myFunctionphp() {
+    var copyText = document.getElementById("MyInputphp");
+    copyText.select();
+    document.execCommand("copy");
+    var tooltip = document.getElementById("mytooltipephp");
+    tooltip.innerHTML = "Code Copied!";
+  }
+  </script>
+  
+
+<pre class="prehtml"><code class="language-sql codesqlpre">
+<h1 class="texthsql">MY SQL CODE</h1><i class="svgglobal"onclick="myFunctionsql()"><span class="displayText" id="mytooltipesql">Code Copied!</span></i><div class="codetextsql">
+CREATE TABLE IF NOT EXISTS `ratings` (
+  `id` varchar(11) NOT NULL,
+  `total_votes` int(11) NOT NULL DEFAULT '0',
+  `total_value` int(11) NOT NULL DEFAULT '0',
+  `used_ips` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;</div></code></pre>
+
+<script>
+  function myFunctionsql() {
+    var copyText = document.getElementById("MyInputsql");
+    copyText.select();
+    document.execCommand("copy");
+    var tooltip = document.getElementById("mytooltipesql");
+    tooltip.innerHTML = "Code Copied!";
+  }
+  </script>
+
+<script src="bar.js"></script>
+<script src="type.js"></script>
+<script src="placeholdertype.js"></script>
+<script src="placeholder.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+     user-select: none;
+     background-color: #222;
+     color: #ff5c75;
+  }
+  
+  .progress-bar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 7px;
+      width: 0%;
+      background-color: #ff5c75;
+  }
+  
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    line-height: 1.45;
+    padding: 2rem;
+    width: 625px;
+    background: linear-gradient(0deg, rgba(40,44,52) 80%, 80%, rgba(251,212,211) 100%);
+    box-shadow: rgba(000, 000, 000, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .hljs-title {
+    color: #fad000;
+    font-weight: normal;
+  }
+  .hljs-name {
+    color:#a1feff;
+  }
+  .hljs-tag {
+    color:#ffffff;
+  }
+  .hljs-attr { 
+    color:#f8d000;
+    font-style:italic;
+  }
+  .hljs-built_in,
+  .hljs-selector-tag,
+  .hljs-section {
+    color:#fb9e00;
+  }
+  .hljs-keyword {
+    color:#fb9e00;
+  }
+  .hljs,
+  .hljs-subst {
+    color:#e3dfff;
+  }
+  .hljs-string,
+  .hljs-attribute,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-addition,
+  .hljs-code,
+  .hljs-regexp,
+  .hljs-selector-class,
+  .hljs-selector-attr,
+  .hljs-selector-pseudo,
+  .hljs-template-tag,
+  .hljs-quote,
+  .hljs-deletion {
+    color:#4cd213;
+  }
+  .hljs-meta,
+  .hljs-meta-string {
+    color:#fb9e00;
+  }
+  .hljs-comment {
+    color:#ac65ff;
+  }
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-name,
+  .hljs-strong {
+    font-weight:normal;
+  }
+  .hljs-literal,
+  .hljs-number {
+    color:#fa658d;
+  }
+  .hljs-emphasis {
+    font-style:italic;
+  }
+  .hljs-strong {
+    font-weight:bold;
+  }
+  
+  /* Code text */
+  
+  .codetexthtml {
+    margin-top: 30px;
+  }  
+
+  .codetextsql {
+    margin-top: 30px;
+  }
+  
+  .codetextcss {
+    margin-top: 70px;
+  }
+  
+  .texthhtml {
+    display: block;
+    margin-top: -29px;
+    color: #ff5c58;
+  }
+  
+  .texthcss {
+    display: block;
+    margin-top: -20px;
+    color: #ff5c58;
+  }
+  
+  .texthsql {
+    display: block;
+    margin-top: -40px;
+    color: #ff5c58;
+  }
+  
+  .workh {
+    color: #ff5c75;
+  }
+  
+  .text-typing {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  span {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .svgglobal {
+    display: block;
+    cursor: pointer;
+    background-image: url(svgkop.png);
+    margin-top: -55px;
+    margin-left: 600px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .inputcode {
+    opacity: 0;
+    cursor: default;
+  }
+
+  .displayText {
+      visibility: hidden;
+      width: 170px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 6px;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -86px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+#preloader.hide-preloader {
+  animation: hidePreloader 1s;
+}
+
+#preloader.preloader-hidden {
+  display: none;
+}
+
+@keyframes hidePreloader {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* START MEDIA SCREEN CODE (ADAPTIVE FOR PHONE) TODO: */
+
+@media screen and (max-width: 768px) {
+  .hljs {
+    width: 270px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .codecsspre {
+    margin-left: 398px;
+    margin-top: -445px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .codesqlpre {
+    margin-left: 398px;
+    margin-top: -340px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .codetextsql {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .codephppre {
+    margin-top: -185px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-typing {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .svgglobal {
+    margin-left: 245px;
+  }
+}
